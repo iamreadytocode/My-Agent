@@ -1,0 +1,39 @@
+# ---------------------
+# Core framework
+# ---------------------
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+
+# ---------------------
+# LLM + Multi-agent
+# ---------------------
+google-generativeai       # Gemini LLM
+langchain                 # For chaining LLM calls
+langgraph                 # Graph orchestration
+pyautogen                 # Microsoft AutoGen
+crewai                    # CrewAI orchestration
+
+# ---------------------
+# Voice (Free Mode - Local)
+# ---------------------
+openai-whisper            # Whisper (local STT)
+piper-tts                 # Piper (local TTS)
+sounddevice
+soundfile
+scipy
+numpy
+ffmpeg-python             # Audio handling for Whisper
+
+# ---------------------
+# Voice (Premium Mode - Cloud)
+# ---------------------
+elevenlabs
+requests
+
+# ---------------------
+# Vector DB / Persistence
+# ---------------------
+faiss-cpu
+sqlalchemy
